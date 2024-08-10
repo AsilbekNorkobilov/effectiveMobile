@@ -8,9 +8,9 @@ Task Management System — это приложение для управлени
 
 - Java 17+
 - Spring Boot
-- PostgreSQL или MySQL
+- PostgreSQL
 - Docker и Docker Compose
-- Maven или Gradle
+- Maven
 
 ## Установка и Запуск
 

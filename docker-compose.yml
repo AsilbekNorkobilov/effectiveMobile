@@ -1,0 +1,17 @@
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: taskdb
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 6701651a
+    ports:
+      - "5437:5432"
+
+  spring-app:
+    image: asilbeknorkobilov/effectivemobile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres-db
